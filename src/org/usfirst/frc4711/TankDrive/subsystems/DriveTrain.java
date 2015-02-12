@@ -47,6 +47,11 @@ public class DriveTrain extends Subsystem {
     public void arcade(double fwd, double turn) {
     	drive.arcadeDrive(fwd, turn);
     }
+
+	public static void Drive(double d, double e) {
+		// TODO Auto-generated method stub
+		
+	}
     
 }
 

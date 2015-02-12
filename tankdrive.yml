@@ -141,7 +141,7 @@ Children:
         validators: [Joystick]
         value: '0'
     Base: Joystick
-    Name: Joystick
+    Name: xbox
   Properties: {}
   Base: OI
   Name: Operator Interface

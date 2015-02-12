@@ -12,7 +12,10 @@
 package org.usfirst.frc4711.TankDrive.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
+
+import org.usfirst.frc4711.TankDrive.OI;
 import org.usfirst.frc4711.TankDrive.Robot;
+import org.usfirst.frc4711.TankDrive.RobotMap;
 
 /**
  *
@@ -35,6 +38,12 @@ public class  Arm extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+    	while(OI.xbox.getRawButton(5)){
+    		RobotMap.forkliftarmMotor.set(1.0);
+    	}
+    	while(OI.xbox.getRawButton(6)){
+   		 	RobotMap.forkliftarmMotor.set(-1.0);
+   	}
     }
 
     // Make this return true when this Command no longer needs to run execute()
