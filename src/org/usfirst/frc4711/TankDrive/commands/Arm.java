@@ -38,10 +38,10 @@ public class  Arm extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	while(OI.xbox.getRawButton(5)){
+    	OI.xbox.getRawButton(5);{
     		RobotMap.forkliftarmMotor.set(1.0);
     	}
-    	while(OI.xbox.getRawButton(6)){
+    	OI.xbox.getRawButton(6);{
    		 	RobotMap.forkliftarmMotor.set(-1.0);
    	}
     }
@@ -59,4 +59,6 @@ public class  Arm extends Command {
     // subsystems is scheduled to run
     protected void interrupted() {
     }
-}
+
+   }
+
