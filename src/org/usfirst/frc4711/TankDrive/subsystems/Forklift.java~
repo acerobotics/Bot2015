@@ -12,6 +12,8 @@
 package org.usfirst.frc4711.TankDrive.subsystems;
 
 import org.usfirst.frc4711.TankDrive.RobotMap;
+import org.usfirst.frc4711.TankDrive.commands.Arm;
+
 import edu.wpi.first.wpilibj.Encoder;
 import edu.wpi.first.wpilibj.SpeedController;
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -39,5 +41,10 @@ public class Forklift extends Subsystem {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
     }
+    
+   // public static void (double fwd, double turn) {
+    	//(fwd, turn);
+
+
 }
 

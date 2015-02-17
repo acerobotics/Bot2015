@@ -40,9 +40,11 @@ public class  Arm extends Command {
     protected void execute() {
     	OI.xbox.getRawButton(5);{
     		RobotMap.forkliftarmMotor.set(1.0);
+    		RobotMap.forkliftarmMotor2.set(1.0);
     	}
     	OI.xbox.getRawButton(6);{
    		 	RobotMap.forkliftarmMotor.set(-1.0);
+   		 	RobotMap.forkliftarmMotor2.set(1.0);
    	}
     }
 

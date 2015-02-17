@@ -39,7 +39,7 @@ public class  Drive extends Command {
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
     	
-    	DriveTrain.arcade(OI.xbox.getRawAxis(1), -OI.xbox.getRawAxis(4));
+    	DriveTrain.arcade(OI.xbox.getRawAxis(1), OI.xbox.getRawAxis(4));
     	
     }
 
